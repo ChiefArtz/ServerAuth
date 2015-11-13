@@ -5,7 +5,7 @@ IPLogin: false
 #Force single authentication
 force-single-auth: true
 #Allow not authenticated users to move
-allow-move: false
+allow-move: true
 #Block chat for not authenticated users
 block-chat: true
 #Block commands for not authenticated users
@@ -13,19 +13,19 @@ block-commands: true
 #Block all events
 block-all-events: true
 #Login/Register timeout
-timeout: 60
+timeout: 600
 #Minimum password length
-minPasswordLength: 6
+minPasswordLength: 5
 #Maximum password length
-maxPasswordLength: 16
+maxPasswordLength: 20
 #Password hash algorithm
-passwordHash: "sha256"
+passwordHash: "*****"
 #ServerAuth language
 language: "EN_en"
 #ServerAuth message prefix
-prefix: "&1[ServerAuth] "
+prefix: "&7[&cMVPE&7]"
 #Show join message (defined on join-message in the current language file)
-show-join-message: true
+show-join-message: false
 #Use MySQL (set this to false if you want to save data in local files)
 use-mysql: false
 #MySQL settings
@@ -47,37 +47,37 @@ login:
   #Enable login on your server
   enabled: true
   #Enable failed logins kick
-  enable-failed-logins-kick: true
+  enable-failed-logins-kick: false
   #Max number of attempts
-  max-login-attempts: 5
+  max-login-attempts: 0
   #Login message interval
-  message-interval: 2
+  message-interval: 0
 #Register settings
 register:
   #Enable register on your server
   enabled: true
   #Require password confirmation
-  password-confirm-required: false
+  password-confirm-required: true
   #Enable max registrations per IP
   enable-max-ip: false
   #Max registrations per IP
-  max-ip: 3
+  max-ip: 0
   #Register message interval
-  message-interval: 2
+  message-interval: 0
 #Change Password settings
 changepassword:
   #Enable changepassword on your server
-  enabled: true
+  enabled: false
   #Require password confirmation
-  password-confirm-required: true
+  password-confirm-required: false
 #Logout settings
 logout:
   #Enable logout on your server
-  enabled: true
+  enabled: false
 #Unregister settings
 unregister:
   #Enable unregister on your server
-  enabled: true
+  enabled: false
   #Require password confirmation
-  require-password: true
+  require-password: false
 ...
